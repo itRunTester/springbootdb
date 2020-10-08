@@ -1,6 +1,9 @@
 app:
   datasource:
-    jdbc-url: jdbc:postgresql:springbootdb
-    username: postgres
-    password: mypsql
-    pool-size: 30yml
+    postgres:
+      port: 5432
+      username: postgres
+      password: mypsql
+      host: localhost
+      databaseName: springbootdb
+      jdbc-url: jdbc:postgres://${app.datasource.postgres.host}:${app.datasource.postgres.port}/${app.datasource.postgres.databaseName}
