@@ -1,6 +1,6 @@
 app:
   datasource:
-    jdbc-url: jdbc:postgresql://localhost:5432/springbootdb
+    jdbc-url: jdbc:postgresql:springbootdb
     username: postgres
     password: mypsql
-    pool-size: 30
+    pool-size: 30yml
